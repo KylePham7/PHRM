@@ -1,0 +1,4 @@
+../Core/Src/IHRD.c:15:6:IRHRM_Init	24	static
+../Core/Src/IHRD.c:34:6:IRHRM_Update	40	static
+../Core/Src/IHRD.c:105:9:IRHRM_IsIrregular	16	static
+../Core/Src/IHRD.c:113:7:IRHRM_GetAverageRR	16	static
