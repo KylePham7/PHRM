@@ -1,0 +1,5 @@
+../Core/Src/IHRD.c:14:6:IRHRM_Init	2
+../Core/Src/IHRD.c:33:6:IRHRM_Update	8
+../Core/Src/IHRD.c:98:9:IRHRM_IsIrregular	1
+../Core/Src/IHRD.c:106:7:IRHRM_GetAverageRR	1
+../Core/Src/IHRD.c:116:6:IRHRM_ClearAlert	2
