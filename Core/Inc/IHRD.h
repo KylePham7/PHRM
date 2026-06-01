@@ -11,15 +11,15 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-#define RR_HISTORY_SIZE            8
+#define RR_HISTORY_SIZE            10
 
 // Difference threshold between beats (ms)
 // Larger values make detector less sensitive
-#define IRREGULAR_THRESHOLD_MS     120
+#define IRREGULAR_THRESHOLD_MS     200
 
 // Minimum number of abnormal intervals
 // before triggering irregular flag
-#define IRREGULAR_COUNT_LIMIT      3
+#define IRREGULAR_COUNT_LIMIT      5
 
 // ================================
 // Struct
