@@ -50,6 +50,8 @@ void IRHRM_Update(IrregularHRM_t *hrm,
 
 uint8_t IRHRM_IsIrregular(IrregularHRM_t *hrm);
 
+void IRHRM_ClearAlert(IrregularHRM_t *hrm);
+
 float IRHRM_GetAverageRR(IrregularHRM_t *hrm);
 
 
