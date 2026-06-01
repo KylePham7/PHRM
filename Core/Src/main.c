@@ -49,7 +49,7 @@
 // --- Low-Pass Filter (noise removal) ---
 // Cutoff ~10Hz: lower value = lower cutoff, more smoothing
 // LP_BETA is automatically 1 - LP_ALPHA
-#define LP_ALPHA                0.2f
+#define LP_ALPHA                0.1f
 #define LP_BETA                 (1.0f - LP_ALPHA)
 
 // --- Sample Rate ---
@@ -71,17 +71,17 @@
 #define BASELINE_DECAY          0.999f
 // Peak envelope tracks signal ceiling (rises fast, falls slow)
 #define ENVELOPE_ATTACK         0.90f
-#define ENVELOPE_DECAY          0.9995f
+#define ENVELOPE_DECAY          0.9998f
 // Peak must exceed this fraction of the baseline-to-envelope range
-#define THRESH_TRIGGER_FRAC     0.55f
+#define THRESH_TRIGGER_FRAC     0.75f
 
 // --- Signal Quality / Not-Worn Detection ---
 // Minimum AC amplitude (envelope - baseline) to consider signal valid
 #define AC_MIN_AMPLITUDE        200.0f
 
 // --- Peak Width Gate (glitch rejection) ---
-// Minimum samples the signal must be locally max across (5 = 12.5ms)
-#define PEAK_WINDOW             5
+// Minimum samples the signal must be locally max across
+#define PEAK_WINDOW             9
 
 // --- Refractory: short debounce only, physiological gate is RR_MIN_MS ---
 // Fix: REFRACTORY_SAMPLES (debounce) must be LESS than RR_MIN_MS in samples
